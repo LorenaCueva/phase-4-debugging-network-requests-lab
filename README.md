@@ -62,12 +62,17 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: 
+    Error 500. Checked the request in the Rails server log.
+    Controller error -> Toys instead of Toy
 
 - Update the number of likes for a toy
 
   - How I debugged:
+   Unexpected end of JSON input error.
+   Checked controller and made sure to return JSON data
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  Error 404. Checked network tab and notices there is delete route missing
